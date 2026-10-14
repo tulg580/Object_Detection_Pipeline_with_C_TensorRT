@@ -148,11 +148,11 @@ make -j$(nproc)
 
 ### 4. Run Inference
 ```bash
-# 웹캠 입력 실시간 추론 (Device ID: 0)
-./yolo_trt --engine ../models/yolov8n.engine --source 0
+# 웹캠 추론 (0번 카메라)
+./yolo_trt ../models/yolov8n.engine 0
 
 # 동영상 파일 추론
-./yolo_trt --engine ../models/yolov8n.engine --source ../data/test_video.mp4
+./yolo_trt ../models/yolov8n.engine ../data/sample.mp4
 ```
 
 ---
